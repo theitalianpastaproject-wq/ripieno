@@ -1,1 +1,63 @@
+html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Italian Pasta Project | Dublin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fdfbf7; color: #332d29; }
+        h1, h2, .serif { font-family: 'Playfair Display', serif; }
+        .hero-bg { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; }
+    </style>
+</head>
+<body>
 
+    <nav class="flex justify-between items-center p-8 max-w-7xl mx-auto">
+        <div class="text-2xl font-bold serif tracking-wider uppercase">The Italian Pasta Project</div>
+        <div class="space-x-8 hidden md:block uppercase text-xs tracking-widest font-semibold">
+            <a href="#about" class="hover:text-orange-800 transition">About</a>
+            <a href="#workshops" class="hover:text-orange-800 transition">Workshops</a>
+            <a href="https://www.instagram.com/theitalian_pastaproject/" target="_blank" class="hover:text-orange-800 transition">Instagram</a>
+            <a href="#contact" class="bg-[#c2410c] text-white px-6 py-3 rounded-full hover:bg-black transition">Book Now</a>
+        </div>
+    </nav>
+
+    <section class="h-[80vh] flex items-center justify-center text-center text-white hero-bg px-4">
+        <div>
+            <h1 class="text-5xl md:text-7xl mb-4 italic">Handmade in Dublin</h1>
+            <p class="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto">Master the art of authentic Italian pasta in our intimate city-center workshops.</p>
+            <a href="#workshops" class="border-2 border-white px-10 py-4 text-sm uppercase tracking-[0.2em] font-bold hover:bg-white hover:text-black transition">Explore Workshops</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 max-w-5xl mx-auto px-8 text-center">
+        <h2 class="text-4xl mb-6">Our Story</h2>
+        <p class="text-lg leading-relaxed text-gray-600 italic">
+            "More than just a cooking class, it's a project dedicated to the slow, beautiful process of rolling dough and sharing stories over a flour-dusted table."
+        </p>
+    </section>
+
+    <section id="workshops" class="bg-[#f5f0e6] py-24 px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl mb-12 text-center">Upcoming Classes</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="bg-white p-6 shadow-sm border-t-4 border-orange-700">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80" alt="Pasta" class="w-full mb-6">
+                    <h3 class="text-2xl mb-2 serif">The Basics: Tagliatelle</h3>
+                    <p class="text-gray-500 mb-4">Learn the foundation of egg pasta and the perfect tomato sauce.</p>
+                    <div class="text-orange-800 font-bold mb-4">€75 / Person</div>
+                    <button class="w-full py-3 border border-black hover:bg-black hover:text-white transition uppercase text-xs tracking-widest font-bold">Details</button>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 text-center border-t border-gray-200">
+        <p class="serif text-2xl mb-6">Follow the journey</p>
+        <a href="https://www.instagram.com/theitalian_pastaproject/" target="_blank" class="text-orange-800 font-bold text-lg underline decoration-1 underline-offset-8">@theitalian_pastaproject</a>
+        <div class="mt-12 text-xs text-gray-400 uppercase tracking-widest">
+            Dublin, Ireland &bull; Founded 2024
+        </div>
+    </footer>
